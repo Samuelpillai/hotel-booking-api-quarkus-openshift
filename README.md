@@ -71,6 +71,18 @@ http://localhost:8080/q/swagger-ui
 
 See `/docs/` for OpenShift dashboard and Swagger UI captures.
 
+### 🔹 Hibernate Console: Auto-Generated DB Schema
+
+![Hibernate Schema](docs/db-schema-hibernate-console.png)
+
+### 🔹 Swagger UI – Part 1: Booking & Customer APIs
+
+![Swagger UI Part 1](docs/swagger-ui-part1.png)
+
+### 🔹 Swagger UI – Part 2: Guest Booking, Hotel, TravelAgent
+
+![Swagger UI Part 2](docs/swagger-ui-part2.png)
+
 ---
 
 ## 📄 License
