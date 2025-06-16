@@ -48,35 +48,39 @@ resources/
 
 ---
 
+---
+
 ## 🧪 How to Run Locally
 
-```bash
+bash
 ./mvnw compile quarkus:dev
-Open Swagger UI at: http://localhost:8080/q/swagger-ui
 
-⸻
+Visit Swagger UI at:
+http://localhost:8080/q/swagger-ui
 
-☁️ Deployment
-	•	Pushed to OpenShift using GitHub S2I pipeline
-	•	Scalable cloud-native microservice
-	•	Each student’s REST API (hotel/flight/taxi) is integrated in the shared TravelAgent service
+---
+## ☁️ Deployment
 
-⸻
+- Pushed to OpenShift using GitHub S2I pipeline  
+- Scalable cloud-native microservice  
+- Each student’s REST API (hotel/flight/taxi) is integrated in the shared TravelAgent service
 
-📸 Screenshots
+---
 
-See /docs/ for OpenShift dashboard and Swagger UI captures.
+## 📸 Screenshots
 
-⸻
+See `/docs/` for OpenShift dashboard and Swagger UI captures.
 
-📄 License
+---
 
-This project is open-source under the MIT License.
+## 📄 License
 
-⸻
+This project is open-source under the **MIT License**.
 
-👨‍💻 Author
+---
 
-Samuel Sathiyamoorthy
-MSc Cloud Computing – Newcastle University
-ssamuelpillai@gmail.com
+## 👨‍💻 Author
+
+**Samuel Sathiyamoorthy**  
+MSc Cloud Computing – Newcastle University  
+📫 ssamuelpillai@gmail.com
