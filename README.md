@@ -1,18 +1,82 @@
-# CSC8104 Quickstart Project
+# 🏨 Hotel Booking API – Quarkus + OpenShift
 
-This quickstart project is provided for students on the CSC8104 Enterprise Middleware module and provides a foundation for starting their coursework. Students are expected to download and build their solution within the provided project and should not aim to create a new project from scratch.
+This is my final coursework project for the CSC8104: Enterprise Middleware module at Newcastle University.
 
-Within the project there is an example REST service for creating and storing contacts which can be accessed via the Swagger UI endpoint (http://localhost:8080/q/swagger-ui). It is encouraged that students spend spend time reading through this code to gain a strong understanding of how the project works. Not only this, but students are also encouraged to follow a similar packaging structure.
+It implements a **RESTful API** for managing **hotel bookings** as part of a larger travel agency system. The backend is built using **Quarkus**, integrated with JPA, JTA, and is cloud-deployed using **OpenShift**.
 
-Students are not required to remove the contact service and can leave this functionality in their submission.
+---
 
-Throughout the coursework specification there are many links to various guides to help you complete the coursework. It is strongly encouraged that you spend time working through these guides before attempting to implement the specification requirements.
+## 📌 Features
 
-## Running the application in dev mode
+- Create, read, update, delete hotel records
+- Book and cancel hotel reservations
+- Ensure unique hotel names and booking constraints
+- Validate guest input with JSR 380 (`@NotNull`, `@Pattern`)
+- Custom exception handling
+- OpenAPI Swagger integration
+- CI/CD ready with Maven + S2I deployment to OpenShift
 
-You can run your application in dev mode that enables live coding using:
-```shell script
+---
+
+## 🚀 Tech Stack
+
+| Layer        | Tech Stack                      |
+|--------------|----------------------------------|
+| Language     | Java 17                          |
+| Framework    | Quarkus (JAX-RS, JPA, JTA)       |
+| Deployment   | OpenShift 4 (Source-to-Image)    |
+| API Docs     | Swagger / OpenAPI                |
+| Testing      | REST Assured                     |
+| Build Tool   | Maven                            |
+
+---
+
+## 🗂️ Project Structure
+
+src/main/java/uk/ac/newcastle/enterprisemiddleware/
+│
+├── hotel/             # Hotel entity & logic
+├── booking/           # Booking service and validations
+├── travelagent/       # Integration layer
+├── guestbooking/      # JTA-based guest booking API
+├── util/              # Validators and exception handlers
+└── Application.java   # Main Quarkus application
+
+resources/
+├── application.properties
+├── import.sql
+
+---
+
+## 🧪 How to Run Locally
+
+```bash
 ./mvnw compile quarkus:dev
-```
+Open Swagger UI at: http://localhost:8080/q/swagger-ui
 
-> **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at http://localhost:8080/q/dev/.
+⸻
+
+☁️ Deployment
+	•	Pushed to OpenShift using GitHub S2I pipeline
+	•	Scalable cloud-native microservice
+	•	Each student’s REST API (hotel/flight/taxi) is integrated in the shared TravelAgent service
+
+⸻
+
+📸 Screenshots
+
+See /docs/ for OpenShift dashboard and Swagger UI captures.
+
+⸻
+
+📄 License
+
+This project is open-source under the MIT License.
+
+⸻
+
+👨‍💻 Author
+
+Samuel Sathiyamoorthy
+MSc Cloud Computing – Newcastle University
+ssamuelpillai@gmail.com
