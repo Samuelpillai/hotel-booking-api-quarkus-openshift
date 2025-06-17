@@ -1,7 +1,5 @@
 # 🏨 Hotel Booking API – Quarkus + OpenShift
 
-This is my final coursework project for the CSC8104: Enterprise Middleware module at Newcastle University.
-
 It implements a **RESTful API** for managing **hotel bookings** as part of a larger travel agency system. The backend is built using **Quarkus**, integrated with JPA, JTA, and is cloud-deployed using **OpenShift**.
 
 ---
