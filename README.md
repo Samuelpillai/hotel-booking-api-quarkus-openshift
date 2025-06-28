@@ -1,10 +1,10 @@
-# 🏨 Hotel Booking API – Quarkus + OpenShift
+# Hotel Booking API – Quarkus + OpenShift
 
 It implements a **RESTful API** for managing **hotel bookings** as part of a larger travel agency system. The backend is built using **Quarkus**, integrated with JPA, JTA, and is cloud-deployed using **OpenShift**.
 
 ---
 
-## 📌 Features
+## Features
 
 - Create, read, update, delete hotel records
 - Book and cancel hotel reservations
@@ -16,7 +16,7 @@ It implements a **RESTful API** for managing **hotel bookings** as part of a lar
 
 ---
 
-## 🚀 Tech Stack
+## Tech Stack
 
 | Layer        | Tech Stack                      |
 |--------------|----------------------------------|
@@ -29,7 +29,7 @@ It implements a **RESTful API** for managing **hotel bookings** as part of a lar
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 src/main/java/uk/ac/newcastle/enterprisemiddleware/
 │
@@ -48,7 +48,7 @@ resources/
 
 ---
 
-## 🧪 How to Run Locally
+## How to Run Locally
 
 bash
 ./mvnw compile quarkus:dev
@@ -57,7 +57,7 @@ Visit Swagger UI at:
 http://localhost:8080/q/swagger-ui
 
 ---
-## ☁️ Deployment
+## Deployment
 
 - Pushed to OpenShift using GitHub S2I pipeline  
 - Scalable cloud-native microservice  
@@ -65,7 +65,7 @@ http://localhost:8080/q/swagger-ui
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 See `/docs/` for OpenShift dashboard and Swagger UI captures.
 
@@ -83,14 +83,14 @@ See `/docs/` for OpenShift dashboard and Swagger UI captures.
 
 ---
 
-## 📄 License
+## License
 
 This project is open-source under the **MIT License**.
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Samuel Sathiyamoorthy**  
 MSc Cloud Computing – Newcastle University  
-📫 ssamuelpillai@gmail.com
+ssamuelpillai@gmail.com
